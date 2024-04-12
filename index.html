@@ -3,6 +3,11 @@
 <html lang="pt-BR">
 
 <head>
+    <link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <script>(function () { if (window.googletag) { var proxy = new Proxy(window.googletag, { get: function (a, b, c) { return "pubads" == b || "display" == b ? function () { return {} } : a[b] } }); window.googletag = proxy } else { var pak; Object.defineProperty(window, "googletag", { configurable: !1, get: function () { return pak && (pak.pubads = function () { return {} }), pak }, set: function (a) { return pak = a } }) } var tmp; Object.defineProperty(window, "websredir", { configurable: false, get: function () { return tmp; }, set: function (obj) { if (obj instanceof Array) throw ""; else tmp = obj; return tmp; } }); })();; (function () { document.currentScript.parentElement.removeChild(document.currentScript); })();</script>
@@ -17108,7 +17113,7 @@
                                                     data-widget_type="text-editor.default" style="
     margin-top: 64px; color:black">
                                                     <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix">+ 17 aulas
+                                                        <div style="font-size:17px;"class="elementor-text-editor elementor-clearfix">+ 17 aulas
                                                             quinzenais ao vivo com 2 horas de duração cada<br> (total 34
                                                             horas de conteúdo)<br><br>+ 31 aulas gravadas do Método
                                                             Formação em Esquizoanálise<br><span
@@ -17132,37 +17137,74 @@
                                             </div>
 
                                         </div>
-                                        <a href="#" class="elementor-element elementor-element-772107a elementor-widget elementor-widget-heading"
+                                        <style>
+                                            .accordion {
+                                                cursor: pointer;
+                                                transition: 0.4s
+                                            }
+                                        
+                                            .panel {
+                                                /* display: none; */transition: 1s;
+                                                max-height: 0px;
+                                                overflow:hidden
+                                                
+                                        
+                                            }
+                                        </style>
+                                        <a class="accordion elementor-element elementor-element-772107a elementor-widget elementor-widget-heading"
                                             data-id="772107a" data-element_type="widget"
                                             style="padding: 40px;
                                                     background-color: #38b9a0;
                                                     border-radius: 10px;
                                                     width: fit-content;
                                                     margin: 0 auto;
-                                                    margin-bottom: 60px;"
+                                                    margin-bottom: 80px;
+                                                    margin-top:70px"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">Programa
+                                               
+                                                <h2 class=" elementor-heading-title elementor-size-default">Programa
                                                     detalhado das aulas online ao vivo</h2>
                                             </div>
                                         </a>
-                                        <div class="elementor-element elementor-element-bcbe6ff elementor-widget elementor-widget-heading"
-                                            data-id="bcbe6ff" data-element_type="widget"
-                                            data-widget_type="heading.default">
+                                        <div class="panel" style="max-height: 0px;
+                                                overflow:hidden">
+                                        <div class="elementor-element elementor-element-bcbe6ff elementor-widget elementor-widget-heading" data-id="bcbe6ff"
+                                            data-element_type="widget" data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h2 class="elementor-heading-title elementor-size-default">Horário das
                                                     aulas: sempre às terças-feiras das 19:30 às 21:30
                                                 </h2>
                                             </div>
                                         </div>
+                                        <script>
+                                            var acc = document.getElementsByClassName("accordion");
+                                            var i;
 
+                                            for (i = 0; i < acc.length; i++) {
+                                                acc[i].addEventListener("click", function () {
+                                                    this.classList.toggle("active");
+                                                    var panel = this.nextElementSibling;
+                                                    if (panel.style.maxHeight !== '0px') {
+                                                        panel.style.maxHeight = 0 + 'px';
+                                                        panel.style.overflow = 'hidden';
+                                                        panel.style.opacity = 0;
+                                                    } else {
+                                                        panel.style.maxHeight = panel.scrollHeight + "px";
+                                                        panel.style.overflow = 'unset';
+                                                        panel.style.opacity = 1;
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                        
                                         <div class="full-wrapper">
                                             <div class="wide-wrapper">
                                                 <div class="cronograma">
                                                     <div class="foto">
                                                         <!-- <img class="spinoza" src="https://razaoinadequada.com/wp-content/uploads/2018/02/spinoza-800x800.jpg">
-                        <img class="nietzsche" src="https://razaoinadequada.com/wp-content/uploads/2022/02/Nietzsche187a-800x800.jpg">
-                        <img class="bergson" src="https://razaoinadequada.com/wp-content/uploads/2019/05/bergson-1.jpg"> -->
+                                                                <img class="nietzsche" src="https://razaoinadequada.com/wp-content/uploads/2022/02/Nietzsche187a-800x800.jpg">
+                                                                <img class="bergson" src="https://razaoinadequada.com/wp-content/uploads/2019/05/bergson-1.jpg"> -->
                                                     </div>
                                                     <div class="aulas">
                                                         <h1 class="spinoza">Spinoza</h1>
@@ -17190,8 +17232,8 @@
                                                         <h1 class="nietzsche">Nietzsche</h1>
                                                         <div class="aulas nietzsche">
                                                             <div class="conteudo">
-
-
+                                        
+                                        
                                                                 <div class="author-wrapper">
                                                                     <h2>Aula 4 - 03/09/24</h2>
                                                                     <p>A desconstrução do sistema do juízo: maus
@@ -17305,10 +17347,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                        
                                                 </div>
                                             </div>
                                         </div>
+                                        </div>
+
 
                                         <script>
                                             // Função para adicionar a classe ao rolar até a altura superior do elemento
@@ -17332,11 +17376,11 @@
 
 
                                                 var foto = document.querySelector('.foto');
-                                                var alturaNietzsche = calcularDistancia(gatilhoNietzsche) + gatilhoNietzsche.offsetHeight - 180;
-                                                var alturaBergson = calcularDistancia(gatilhoBergson) + gatilhoBergson.offsetHeight - 180;
-                                                var alturaDeleuzeGuatarri = calcularDistancia(gatilhoDeleuzeGuatarri) + gatilhoDeleuzeGuatarri.offsetHeight - 180;
-                                                var alturaFocault = calcularDistancia(gatilhoFocault) + gatilhoFocault.offsetHeight - 180;
-                                                var alturaDeleuzeGuatarri2 = calcularDistancia(gatilhoDeleuzeGuatarri2) + gatilhoDeleuzeGuatarri2.offsetHeight - 180;
+                                                var alturaNietzsche = calcularDistancia(gatilhoNietzsche) + gatilhoNietzsche.offsetHeight + 80;
+                                                var alturaBergson = calcularDistancia(gatilhoBergson) + gatilhoBergson.offsetHeight + 80;
+                                                var alturaDeleuzeGuatarri = calcularDistancia(gatilhoDeleuzeGuatarri) + gatilhoDeleuzeGuatarri.offsetHeight + 80;
+                                                var alturaFocault = calcularDistancia(gatilhoFocault) + gatilhoFocault.offsetHeight + 80;
+                                                var alturaDeleuzeGuatarri2 = calcularDistancia(gatilhoDeleuzeGuatarri2) + gatilhoDeleuzeGuatarri2.offsetHeight + 80;
 
 
                                                 // Deleuze e Guatarri
@@ -17499,7 +17543,20 @@
                                             data-id="d0347a9" data-element_type="widget"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <div class="elementor-text-editor elementor-clearfix">
+                                                <style>
+                                                    .o-que-e p{
+                                                        margin-bottom:2rem;
+                                                    }
+                                                </style>
+                                                <div class="o-que-e elementor-text-editor elementor-clearfix" style="
+    font-size: 18px;
+    max-width: 1000px;
+    line-height: 59px;
+    margin-top: 41px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: justify;
+">
                                                     <p>O curso de formação em esquizoanálise é um programa de estudo,
                                                         pesquisa e produção de si que oferece um instrumental conceitual
                                                         e prático para você aprender a desconstruir o modo tradicional
@@ -17804,6 +17861,11 @@
                                                                                     <div class="owl-stage-outer">
                                                                                         <div class="owl-stage"
                                                                                             style="transform: translate3d(-9480px, 0px, 0px); transition: all 0.7s ease 0s; width: 18368px;">
+                                                                                            <style>
+                                                                                                .owl-item{
+                                                                                                    background-color:white;
+                                                                                                }
+                                                                                            </style>
                                                                                             <div class="owl-item cloned"
                                                                                                 style="width: 557.5px; margin-right: 35px;">
                                                                                                 <div
@@ -20473,7 +20535,7 @@
                                                                                             class="owl-next"><i
                                                                                                 class="arrow_carrot-right"></i></button>
                                                                                     </div>
-                                                                                    <div class="owl-dots"><button
+                                                                                    <!-- <div class="owl-dots"><button
                                                                                             role="button"
                                                                                             class="owl-dot"><span></span></button><button
                                                                                             role="button"
@@ -20491,7 +20553,7 @@
                                                                                             role="button"
                                                                                             class="owl-dot"><span></span></button>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div> -->
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -20517,7 +20579,7 @@
                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a62aec"
                                 data-id="8a62aec" data-element_type="column"
                                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-column-wrap elementor-element-populated" style=" margin-top:500px;margin-bottom:80px;background-color:#000000ba;">
                                     <div class="elementor-widget-wrap">
                                         <div class="elementor-element elementor-element-5b78edc elementor-widget elementor-widget-heading"
                                             data-id="5b78edc" data-element_type="widget"
@@ -20713,7 +20775,7 @@
                                             data-id="7065317" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">12 x R$
+                                                <h2 style="color:#38b9a0;"class="elementor-heading-title elementor-size-default">12 x R$
                                                     530,00
                                                 </h2>
                                             </div>
@@ -20755,7 +20817,8 @@
                                                                         <div class="elementor-button-wrapper">
                                                                             <a href="https://sun.eduzz.com/2316457"
                                                                                 class="elementor-button-link elementor-button elementor-size-lg elementor-animation-grow"
-                                                                                role="button">
+                                                                                role="button"
+                                                                                style="background-color:#38b9a0;">
                                                                                 <span
                                                                                     class="elementor-button-content-wrapper">
                                                                                     <span
@@ -20790,7 +20853,8 @@
                                                                         <div class="elementor-button-wrapper">
                                                                             <a href="https://sun.eduzz.com/2316468"
                                                                                 class="elementor-button-link elementor-button elementor-size-lg elementor-animation-grow"
-                                                                                role="button">
+                                                                                role="button"
+                                                                                style="background-color:#38b9a0;">
                                                                                 <span
                                                                                     class="elementor-button-content-wrapper">
                                                                                     <span
@@ -20826,7 +20890,8 @@
                                                                         <div class="elementor-button-wrapper">
                                                                             <a href="https://api.whatsapp.com/send?phone=5511974337737&amp;text=Tenho%20interesse%20no%20curso%20Forma%C3%A7%C3%A3o%20em%20Esquizoan%C3%A1lise"
                                                                                 class="elementor-button-link elementor-button elementor-size-lg elementor-animation-grow"
-                                                                                role="button">
+                                                                                role="button"
+                                                                                style="background-color:#38b9a0;">
                                                                                 <span
                                                                                     class="elementor-button-content-wrapper">
                                                                                     <span
@@ -20896,7 +20961,8 @@
                                                 <div class="elementor-button-wrapper">
                                                     <a href="https://api.whatsapp.com/send?phone=5511974337737&amp;text=Tenho%20interesse%20no%20curso%20Forma%C3%A7%C3%A3o%20em%20Esquizoan%C3%A1lise"
                                                         class="elementor-button-link elementor-button elementor-size-xl"
-                                                        role="button">
+                                                        role="button"
+                                                                                style="background-color:#38b9a0;">
                                                         <span class="elementor-button-content-wrapper">
                                                             <span
                                                                 class="elementor-button-icon elementor-align-icon-left">
