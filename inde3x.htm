@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação em Esquizoanálize - Turma 9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    .full-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:"Montserrat";
+        margin:0;
+    }
+
+    h1{
+        margin: 9px 0;
+        font-family:"Montserrat";
+    }
+
+    .wide-wrapper{
+        width: 1245px;
+    }
+    .cronograma{
+        display:flex;
+        gap: 40px;
+    }
+
+    .cronograma .foto {
+        min-width: 25rem;
+        height: 25rem;
+        background-image:url('https://razaoinadequada.com/wp-content/uploads/2018/02/spinoza-800x800.jpg');
+        transition: background-image 1s;
+        background-size: cover;
+        position:sticky;
+        top:1.25rem;
+    }
+
+    .cronograma .foto.foto-nietzsche{
+        background-image: url('https://razaoinadequada.com/wp-content/uploads/2022/02/Nietzsche187a-800x800.jpg') !important;
+        transition: background-image 1s;
+    }
+
+    .cronograma .foto.foto-bergson {
+        background-image: url('https://razaoinadequada.com/wp-content/uploads/2019/05/bergson-1.jpg') !important;
+        transition: background-image 1s;
+    }
+
+    .cronograma .foto img.spinoza {
+        margin-bottom:320px;
+        margin: top 6.28em;
+    }
+
+    .cronograma .foto img.nietzsche {
+        margin-bottom: 352px;
+    }
+
+    .cronograma .foto img.bergson {
+        margin-bottom: 176px;
+    }
+
+    .cronograma p{
+        /* font-family: 'Rubik', 'Times New Roman', Times, serif; */
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .author-wrapper{
+        padding: 40px;
+        color:antiquewhite; 
+    }
+
+        .aulas .aulas {
+            margin-bottom:  2.5rem;
+        }
+
+    .aulas div.spinoza{
+        background-color:#6c5148;
+        
+    }
+
+    .aulas div.nietzsche {
+        background-color: #8d1919;
+    }
+
+    .aulas div.bergson {
+        background-color: #374c5f;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="full-wrapper">
+        <div class="wide-wrapper">
+            <div class="cronograma">
+                <div class="foto">
+                    <!-- <img class="spinoza" src="https://razaoinadequada.com/wp-content/uploads/2018/02/spinoza-800x800.jpg">
+                        <img class="nietzsche" src="https://razaoinadequada.com/wp-content/uploads/2022/02/Nietzsche187a-800x800.jpg">
+                        <img class="bergson" src="https://razaoinadequada.com/wp-content/uploads/2019/05/bergson-1.jpg"> -->
+                </div>
+                <div class="aulas">
+                    <h1 class="spinoza">Spinoza</h1>
+                    <div class="aulas spinoza">
+                        <div class="author-wrapper">
+                            <h2>Aula 1 - 14/05/24</h2>
+                            <p>Pressupostos filosóficos da Esquizoanálise: uma introdução à filosofia da diferença e ao
+                                pensamento
+                                nômade. As ciências psis tem ignorado a dimensão ontológica</p>
+                            <h2>Aula 2 - 28/05/24</h2>
+                            <p>Spinoza e o plano de imanência do desejo: inconsciente como natureza naturante e desejo sem
+                                falta.
+                            </p>
+                            <h2>Aula 3 - 11/06/24</h2>
+                            <p>Spinoza, a desqualificação da consciência, da imaginação e das paixões tristes: plano comum dos
+                                encontros, paixões alegres e afetos ativos: ao desejo nada falta.</p>
+                        </div>
+                    </div>
+                    <h1 class="nietzsche">Nietzsche</h1>
+                    <div class="aulas nietzsche">
+                        <div class="conteudo">
+        
+        
+                            <div class="author-wrapper">
+                                <h2>Aula 4 - 03/09/24</h2>
+                                <p>A desconstrução do sistema do juízo: maus encontros, memória de marcas, culpabilidade,
+                                    ressentimento
+                                    a consciência da culpa como captura do desejo e do inconsciente.</p>
+                                <h2>Aula 5 - 06/08/24</h2>
+                                <p>A ficção da dívida infinita como dívida de existência, pecado original ou Édipo: a ilusão da
+                                    insuficiência do ser e da impossibilidade do real.</p>
+                                <h2>Aula 6 - 20/08/24</h2>
+                                <p>O negativo do pensamento e o devir reativo das forças que constituem o ser humano atual:
+                                    niilismo
+                                    negativo, reativo, passivo e o devir-camelo do desejo e do pensamento - grande cansaço:
+                                    depressão do
+                                    desejo - quarto sentido de niilismo - niilismo ativo e o devir leão do espírito; o
+                                    esgotamento do
+                                    possível como condição de criação do real.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="bergson">Bergson</h1>
+                    <div class="aulas bergson">
+                        <div class="author-wrapper">
+                            <h2>Aula 7 - 03/09/24</h2>
+                            <p>As multiplicidades do inconsciente e a desconstrução da identidade do Eu - o desejo intensivo em
+                                sua
+                                diferençade natureza com o desejo intencional fundado na falta de objeto como fonte de falsos
+                                problemas.</p>
+                            <h2>Aula 8 - 03/09/24</h2>
+                            <p>Somos dobras afetivas, feitos de linhas de tempo e movimento: a realidade virtual doinconsciente
+                                constituído como multiplicidade qualitativa de seres detempo, coexistente à realidade atual dos
+                                devires do presente.</p>
+                            <h2>Aula 9: 01/10/24</h2>
+                            <p>Afirmação daszonas de indeterminação do corpo, do desejo e do pensamento como superfícies lisas e
+                                condição para a criação dos circuitos intensivos dodesejo e suas diferenciações como invenção de
+                                novas territorialidades existenciais.</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="height:800px"></div>
+
+        <script>
+            // Função para adicionar a classe ao rolar até a altura superior do elemento
+            function adicionarClasseAoScroll() {
+                var gatilhoNietzsche = document.querySelector('.aulas.spinoza');
+                var gatilhoBergson = document.querySelector('.aulas.nietzsche');
+                var foto = document.querySelector('.foto');
+                var alturaNietzsche = gatilhoNietzsche.offsetTop + gatilhoNietzsche.offsetHeight - 80;
+                var alturaBergson = gatilhoBergson.offsetTop + gatilhoBergson.offsetHeight - 80;
+
+                // Bergson
+                if (window.pageYOffset >= alturaBergson && window.pageYOffset >= alturaNietzsche) {
+                    foto.classList.remove('foto-nietzsche');
+                    foto.classList.add('foto-bergson');
+                }
+                // Nietzsche
+                else if (window.pageYOffset >= alturaNietzsche && window.pageYOffset <= alturaBergson) {
+                    foto.classList.add('foto-nietzsche');
+                    foto.classList.remove('foto-bergson');
+                // Spinoza
+                } else if (window.pageYOffset < alturaNietzsche && window.pageYOffset < alturaBergson) {
+                    foto.classList.remove('foto-bergson');
+                    foto.classList.remove('foto-nietzsche');
+                }
+            }
+
+            // Adiciona o evento de scroll para chamar a função quando o usuário rolar a página
+            window.addEventListener('scroll', adicionarClasseAoScroll);
+        </script>
+
+</body>
+</html>
