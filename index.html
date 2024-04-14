@@ -16767,7 +16767,7 @@
             }
 
             .wide-wrapper {
-                width: 1245px;
+                max-width: 1245px;
             }
 
             .cronograma {
@@ -16776,8 +16776,9 @@
             }
 
             .cronograma .foto {
-                min-width: 25rem;
-                height: 25rem;
+                width: 33.33333333%;
+                height:min-content;
+                aspect-ratio: 1;
                 background-image: url('https://razaoinadequada.com/wp-content/uploads/2018/02/spinoza-800x800.jpg');
                 transition: background-image .5s;
                 background-size: cover;
@@ -16831,6 +16832,14 @@
                 padding: 40px;
                 color: white;
             }
+            
+            .aulas{
+                width: 60%;
+            }
+
+            .aulas .aulas{
+                width:100%;
+            }
 
             .aulas .aulas:not(:last-child) {
                 margin-bottom: 2.5rem;
@@ -16859,6 +16868,75 @@
 
             .aulas div.focault {
                 background-color: #42a2a5;
+            }
+            .cronograma-mobile{
+                display:none;
+            }
+            @media (max-width:690px){
+                .cronograma{
+                    display:none;
+                }
+                .cronograma-mobile .foto {
+                    width: 100%;
+                    background-image:url('https://razaoinadequada.com/wp-content/uploads/2018/02/spinoza-800x800.jpg');
+                    position: unset;
+                    height: 100%; 
+                    aspect-ratio: 1;
+                    background-size: cover;
+                }
+                .cronograma-mobile p{
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 25px;
+                    color: white;
+                }
+
+                .cronograma-mobile{
+                    display:block;
+                }
+
+                .cronograma-mobile .foto.foto-nietzsche{
+                    background-image: url('https://razaoinadequada.com/wp-content/uploads/2022/02/Nietzsche187a-800x800.jpg') !important;
+                    transition: background-image 1s;
+                }
+
+                .cronograma-mobile .foto.foto-bergson {
+                    background-image: url('https://razaoinadequada.com/wp-content/uploads/2019/05/bergson-1.jpg') !important;
+                    transition: background-image 1s;
+                }
+
+                
+                .cronograma-mobile .foto.foto-bergson {
+                    background-image: url('https://razaoinadequada.com/wp-content/uploads/2019/05/bergson-1.jpg') !important;
+                    transition: background-image .5s;
+                }
+
+                .cronograma-mobile .foto.foto-deleuze-guatarri {
+                    background-image: url('https://razaoinadequada.com/wp-content/uploads/2019/08/deleuze-guattari-country-800x800.jpg') !important;
+                    transition: background-image .5s;
+                }
+
+                .cronograma-mobile .foto.foto-focault {
+                    background-image: url('https://razaoinadequada.com/wp-content/uploads/2014/11/foucault1-800x800.jpg') !important;
+                    transition: background-image .5s;
+                }
+
+
+                .cronograma-mobile .foto img.spinoza {
+                    margin-bottom:320px;
+                    margin: top 6.28em;
+                }
+
+                .cronograma-mobile .foto img.nietzsche {
+                    margin-bottom: 352px;
+                }
+
+                .cronograma-mobile .foto img.bergson {
+                    margin-bottom: 176px;
+                }
+                .aulas{
+                    width:100%  
+                }
             }
         </style>
 
@@ -17100,12 +17178,24 @@
                                         <div class="elementor-element elementor-element-50c48ff elementor-widget elementor-widget-text-editor"
                                             data-id="50c48ff" data-element_type="widget"
                                             data-widget_type="text-editor.default">
+                                            <style>
+                                                .casos-complexos{
+                                                    display: flex;
+                                                }
+                                                @media (max-width:770px){
+                                                    .casos-complexos{
+                                                        display:block
 
+                                                }
+                                                }
+                                                
+                                            </style>
                                             <div class="casos-complexos" style="
     margin-top: 60px;
-    display: flex;
+    
+    gap:40px;
 ">
-                                                <div class="img-new" style="flex-basis: 52rem;">
+                                                <div class="img-new" style="flex-basis: 48rem;">
                                                     <img src="screenshot3.png">
                                                 </div>
                                                 <div class="elementor-element elementor-element-50c48ff elementor-widget elementor-widget-text-editor"
@@ -17348,6 +17438,162 @@
                                                         </div>
                                                     </div>
                                         
+                                                </div>
+                                                <div class="cronograma-mobile">
+                                                    <div class="aulas">
+                                                        <h1 class="spinoza">Spinoza</h1>
+                                                        <div class="foto">
+                                                        </div>
+                                                        <div class="aulas spinoza">
+                                                            <div class="author-wrapper">
+                                                                <h2>Aula 1 - 14/05/24</h2>
+                                                                <p>Pressupostos filosóficos da Esquizoanálise: uma
+                                                                    introdução à filosofia da diferença e ao
+                                                                    pensamento
+                                                                    nômade. As ciências psis tem ignorado a dimensão
+                                                                    ontológica</p>
+                                                                <h2>Aula 2 - 28/05/24</h2>
+                                                                <p>Spinoza e o plano de imanência do desejo:
+                                                                    inconsciente como natureza naturante e desejo sem
+                                                                    falta.
+                                                                </p>
+                                                                <h2>Aula 3 - 11/06/24</h2>
+                                                                <p>Spinoza, a desqualificação da consciência, da
+                                                                    imaginação e das paixões tristes: plano comum
+                                                                    dos
+                                                                    encontros, paixões alegres e afetos ativos: ao
+                                                                    desejo nada falta.</p>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="nietzsche">Nietzsche</h1>
+                                                        <div class="foto foto-nietzsche">
+                                                        </div>
+                                                        <div class="aulas nietzsche">
+                                                            <div class="conteudo">
+                                                
+                                                
+                                                                <div class="author-wrapper">
+                                                                    <h2>Aula 4 - 03/09/24</h2>
+                                                                    <p>A desconstrução do sistema do juízo: maus
+                                                                        encontros, memória de marcas, culpabilidade,
+                                                                        ressentimento
+                                                                        a consciência da culpa como captura do desejo e
+                                                                        do inconsciente.</p>
+                                                                    <h2>Aula 5 - 06/08/24</h2>
+                                                                    <p>A ficção da dívida infinita como dívida de
+                                                                        existência, pecado original ou Édipo: a ilusão
+                                                                        da
+                                                                        insuficiência do ser e da impossibilidade do
+                                                                        real.</p>
+                                                                    <h2>Aula 6 - 20/08/24</h2>
+                                                                    <p>O negativo do pensamento e o devir reativo das
+                                                                        forças que constituem o ser humano atual:
+                                                                        niilismo
+                                                                        negativo, reativo, passivo e o devir-camelo do
+                                                                        desejo e do pensamento - grande cansaço:
+                                                                        depressão do
+                                                                        desejo - quarto sentido de niilismo - niilismo
+                                                                        ativo e o devir leão do espírito; o
+                                                                        esgotamento do
+                                                                        possível como condição de criação do real.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="bergson">Bergson</h1>
+                                                        <div class="foto foto-berson">
+                                                        </div>
+                                                        <div class="aulas bergson">
+                                                            <div class="author-wrapper">
+                                                                <h2>Aula 7 - 03/09/24</h2>
+                                                                <p>As multiplicidades do inconsciente e a desconstrução
+                                                                    da identidade do Eu - o desejo intensivo
+                                                                    em
+                                                                    sua
+                                                                    diferençade natureza com o desejo intencional
+                                                                    fundado na falta de objeto como fonte de
+                                                                    falsos
+                                                                    problemas.</p>
+                                                                <h2>Aula 8 - 03/09/24</h2>
+                                                                <p>Somos dobras afetivas, feitos de linhas de tempo e
+                                                                    movimento: a realidade virtual
+                                                                    doinconsciente
+                                                                    constituído como multiplicidade qualitativa de seres
+                                                                    detempo, coexistente à realidade atual
+                                                                    dos
+                                                                    devires do presente.</p>
+                                                                <h2>Aula 9: 01/10/24</h2>
+                                                                <p>Afirmação daszonas de indeterminação do corpo, do
+                                                                    desejo e do pensamento como superfícies
+                                                                    lisas e
+                                                                    condição para a criação dos circuitos intensivos
+                                                                    dodesejo e suas diferenciações como
+                                                                    invenção de
+                                                                    novas territorialidades existenciais.</p>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="deleuze-guatarri">Deleuze e Guatarri</h1>
+                                                        <div class="foto foto-deleuze-guatarri">
+                                                        </div>
+                                                        <div class="aulas deleuze-guatarri">
+                                                            <div class="author-wrapper">
+                                                                <h2>Aula 10 - 22/10/24</h2>
+                                                                <p>Os mapas do desejo e o cartógrafo inconsciente:
+                                                                    encontrar o desejo onde ele está, seu aqui e seu
+                                                                    agora e seus investimentos inconscientes ou
+                                                                    intensivos e seus esburacamentos intencionais.</p>
+                                                                <h2>Aula 11 - 05/11/24</h2>
+                                                                <p>As transformações incorporais como atos de linguagem
+                                                                    e criação de novos horizontes semióticos e estéticos
+                                                                    para o desejo x a linguagem como máquina social de
+                                                                    captura e assujeitamento do desejo e do pensamento.
+                                                                </p>
+                                                                <h2>Aula 12 - 26/11/24</h2>
+                                                                <p>Agenciamentos maquínicos de desejo e agenciamentos
+                                                                    coletivos de enunciação: regimes de signos
+                                                                    incorporais e regimes corporais de luz ou
+                                                                    sensibilidade.</p>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="focault">Focault</h1>
+                                                        <div class="foto foto-focault">
+                                                        </div>
+                                                        <div class="aulas focault">
+                                                            <div class="author-wrapper">
+                                                                <h2>Aula 13 - 10/12/24</h2>
+                                                                <p>Os dispositivos para uma desconstrução das capturas
+                                                                    do desejo na prática clínica - dispositivos,
+                                                                    dizibilidades e visibilidades.</p>
+                                                                <h2>Aula 14 - 04/02/25</h2>
+                                                                <p>Diagramas de poder e Estilização da Existência como
+                                                                    ferramentas para uma clínica ativa do desejo e da
+                                                                    vida que faz a diferença.</h2>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="deleuze-guatarri2">Deleuze e Guatarri</h1>
+                                                        <div class="foto foto-deleuze-guatarri">
+                                                        </div>
+                                                        <div class="aulas deleuze-guatarri2">
+                                                            <div class="author-wrapper">
+                                                                <h2>Aula 10 - 22/10/24</h2>
+                                                                <p>Os mapas do desejo e o cartógrafo inconsciente:
+                                                                    encontrar o desejo onde ele está, seu aqui e seu
+                                                                    agora e seus investimentos inconscientes ou
+                                                                    intensivos e seus esburacamentos intencionais.</p>
+                                                                <h2>Aula 11 - 05/11/24</h2>
+                                                                <p>As transformações incorporais como atos de linguagem
+                                                                    e criação de novos horizontes semióticos e estéticos
+                                                                    para o desejo x a linguagem como máquina social de
+                                                                    captura e assujeitamento do desejo e do pensamento.
+                                                                </p>
+                                                                <h2>Aula 12 - 26/11/24</h2>
+                                                                <p>Agenciamentos maquínicos de desejo e agenciamentos
+                                                                    coletivos de enunciação: regimes de signos
+                                                                    incorporais e regimes corporais de luz ou
+                                                                    sensibilidade.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -20579,7 +20825,24 @@
                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a62aec"
                                 data-id="8a62aec" data-element_type="column"
                                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<<<<<<< HEAD
                                 <div class="elementor-column-wrap elementor-element-populated" style=" margin-top:500px;margin-bottom:80px;background-color:#000000ba;">
+=======
+                                <style>
+                                    .deserto-bg{
+                                        margin-top:500px;
+                                        margin-bottom:80px;
+                                    }
+                                    @media (max-width:690px){
+                                        .deserto-bg{
+                                            margin-top:0;
+                                            margin-bottom: 0;
+                                        }
+                                    }    
+                                </style>
+
+                                <div class="deserto-bg elementor-column-wrap elementor-element-populated" style="background-color:#00000054;">
+>>>>>>> 47c1ed2 (add responsive styles)
                                     <div class="elementor-widget-wrap">
                                         <div class="elementor-element elementor-element-5b78edc elementor-widget elementor-widget-heading"
                                             data-id="5b78edc" data-element_type="widget"
